@@ -7,6 +7,7 @@ public class GeneradorCodigoBarras {
 
         Random random = new Random();
 
+        // Utilizar mejor StringBuilder que String
         StringBuilder codeBuilder = new StringBuilder();
         for (int i = 0; i < codeLength; i++) {
             int randomIndex = random.nextInt(characters.length());
